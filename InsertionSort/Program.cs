@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace InsertionSort
 {
@@ -10,8 +6,8 @@ namespace InsertionSort
     {
         static void Main(string[] args)
         {
-            int n = 5;
             int[] a = new int[] { 5, 6, 2, 7, 1 };
+            int n = a.Length;
 
             for (int i = 1; i < n; i++)
             {

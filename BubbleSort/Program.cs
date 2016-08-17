@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BubbleSort
 {
@@ -10,8 +6,8 @@ namespace BubbleSort
     {
         static void Main(string[] args)
         {
-            int n = 5;
             int[] a = new int[] { 5, 6, 2, 7, 1 };
+            int n = a.Length;
             int flag = 0;
 
             for (int i = 1; i <= n - 1; i++)

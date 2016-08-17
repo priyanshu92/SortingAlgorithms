@@ -6,8 +6,8 @@ namespace MergeSort
     {
         static void Main(string[] args)
         {
-            int n = 7;
             int[] a = new int[] { 2, 4, 1, 6, 5, 3, 7 };
+            int n = a.Length;
 
             a = MergeSort(a);
 
