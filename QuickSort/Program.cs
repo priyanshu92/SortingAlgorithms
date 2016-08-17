@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace QuickSort
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             int[] a = new int[] { 2, 4, 1, 6, 5, 3, 7 };
 
@@ -20,7 +20,7 @@ namespace QuickSort
             }
         }
 
-        static int Partition(int[] a, int start, int end)
+        public static int Partition(int[] a, int start, int end)
         {
             int pivot = a[end];
             int partitionIndex = start;
@@ -36,7 +36,7 @@ namespace QuickSort
             return partitionIndex;
         }
 
-        static void QuickSort(int[] a, int start, int end)
+        public static void QuickSort(int[] a, int start, int end)
         {
             if (start < end)
             {
@@ -46,11 +46,16 @@ namespace QuickSort
             }
         }
 
-        private static void swap(ref int v1, ref int v2)
+        public static void swap(ref int v1, ref int v2)
         {
             int temp = v1;
             v1 = v2;
             v2 = temp;
+        }
+
+        public string ShowMessage()
+        {
+            return "Hello";
         }
     }
 }
