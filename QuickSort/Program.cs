@@ -24,11 +24,11 @@ namespace QuickSort
             {
                 if (a[i] <= pivot)
                 {
-                    swap(ref a[i], ref a[partitionIndex]);
+                    Swap(ref a[i], ref a[partitionIndex]);
                     partitionIndex++;
                 }
             }
-            swap(ref a[partitionIndex], ref a[end]);
+            Swap(ref a[partitionIndex], ref a[end]);
             return partitionIndex;
         }
 
@@ -42,16 +42,11 @@ namespace QuickSort
             }
         }
 
-        public static void swap(ref int v1, ref int v2)
+        public static void Swap(ref int v1, ref int v2)
         {
             int temp = v1;
             v1 = v2;
             v2 = temp;
-        }
-
-        public string ShowMessage()
-        {
-            return "Hello";
         }
     }
 }
